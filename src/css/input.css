@@ -52,6 +52,33 @@
     }
 
     .custom-slider::-webkit-slider-runnable-track {}
+
+    .strength {
+        border: 2px solid var(--color-grey200);
+    }
+
+    .statesRed {
+        border: 2px solid var(--color-red500);
+        background: var(--color-red500);
+    }
+
+    .statesOrange {
+        border: 2px solid var(--color-orange400);
+        background: var(--color-orange400);
+    }
+
+    .statesYellow {
+        border: 2px solid var(--color-yellow300);
+        background: var(--color-yellow300);
+    }
+
+    .statesGreen {
+
+        border: 2px solid var(--color-green200);
+        background: var(--color-green200);
+
+    }
+
 }
 
 @theme {

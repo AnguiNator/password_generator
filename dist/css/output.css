@@ -31,6 +31,9 @@
     --color-grey600: #817D92;
     --color-grey200: #E6E5EA;
     --color-green200: #A4FFAF;
+    --color-yellow300: #F8CD65;
+    --color-orange400: #FB7C58;
+    --color-red500: #F64A4A;
   }
 }
 @layer base {
@@ -197,6 +200,9 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .size-5 {
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
@@ -333,6 +339,10 @@
     --tw-tracking: var(--tracking-normal);
     letter-spacing: var(--tracking-normal);
   }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
   .text-green200 {
     color: var(--color-green200);
   }
@@ -347,6 +357,9 @@
   }
   .text-grey800 {
     color: var(--color-grey800);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .lowercase {
     text-transform: lowercase;
@@ -520,6 +533,12 @@
       letter-spacing: var(--tracking-normal);
     }
   }
+  .md\:text-2xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
 }
 @layer utilities {
   .custom-slider {
@@ -549,6 +568,25 @@
     cursor: pointer;
     border-radius: 50%;
     border: none;
+  }
+  .strength {
+    border: 2px solid var(--color-grey200);
+  }
+  .statesRed {
+    border: 2px solid var(--color-red500);
+    background: var(--color-red500);
+  }
+  .statesOrange {
+    border: 2px solid var(--color-orange400);
+    background: var(--color-orange400);
+  }
+  .statesYellow {
+    border: 2px solid var(--color-yellow300);
+    background: var(--color-yellow300);
+  }
+  .statesGreen {
+    border: 2px solid var(--color-green200);
+    background: var(--color-green200);
   }
 }
 @property --tw-border-style {
